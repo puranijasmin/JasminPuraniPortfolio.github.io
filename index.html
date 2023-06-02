@@ -13,11 +13,13 @@
     <link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
     <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet" />
     <link href="assets/flexslider/flexslider.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   </head>
   <body id="top">
+    <div id="ball"></div>
     <div id="preloader"></div>
     <header id="home">
       <div class="container-fluid">
@@ -32,12 +34,12 @@
                 <a href="index.html#about"
                   ><i class="fa fa-fw fa-quote-left"></i><span>About</span></a
                 >
-                <a href="index.html#service"
-                  ><i class="fa fa-fw fa-globe"></i><span>Porojects</span></a
-                >
                 <a href="index.html#portfolio"
                   ><i class="fa fa-fw fa-picture-o"></i
                   ><span>Portfolio</span></a
+                >
+                <a href="index.html#testimonial"
+                  ><i class="fa fa-comments"></i><span>Testimonials</span></a
                 >
                 <a href="index.html#contact"
                   ><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a
@@ -59,11 +61,9 @@
           </div>
           <div class="row">
             <div class="col-md-8 inner">
-              <h1 class="animated fadeInDown">
-                <!-- JASMIN<span style="color: #e04343">o</span>hn<br />
-                <span>D<span style="color: #ffe800">o</span>e</span> -->
-                Hey ,<span style="color: #e04343"></span><br />
-                I am<span style="color: #e04343"> Jasmine !</span>
+              <h1 data-aos="zoom-in" data-aos-duration="2000">
+                Hey ,<span style="color: #3c3b73"></span><br />
+                I am<span style="color: #3c3b73"> Jasmin !</span>
               </h1>
               <h3 class="animated fadeInUp delay-05s">
                 <span class="rotate"
@@ -86,70 +86,311 @@
         </div>
       </section>
     </header>
- 
-    <section class="intro text-center section-padding color-bg" id="about">
-      <div class="container">
+
+    <section
+      class="intro text-center section-padding color-bg about_me"
+      id="about"
+    >
+      <div class="container" data-aos="fade-down" data-aos-duration="2000">
         <div class="row">
           <div class="col-md-12 wp1">
             <h1 class="arrow">A little <span>about</span> me</h1>
-            <p class="about_text">
-              I love learning about new things, which led me to discover a joy
-              in coding. I enjoy the creative process of thinking about the user
-              experience and design and translating that to code. I Love to
-              create awesome and meaningful software. Proficient in building
-              user interfaces using JavaScript/React. I would like to work in an
-              organization where I can get best opportunity to utilize my
-              knowledge and skills at their best level and I can grow
-              professionally in good and well esteemed organization to achieve
-              the greatest height in my throughout life.
-            </p>
+            <div class="about_text">
+              <p>
+                Allow me to introduce myself: I'm Jasmin Purani, a passionate
+                female UI/UX Developer who thrives on creating captivating
+                designs. With years of experience under my belt, I skillfully
+                blend innovation and aesthetics to craft extraordinary user
+                experiences.
+              </p>
+              <p>
+                Every project I undertake is infused with meticulous attention
+                to detail, ensuring that each design not only looks visually
+                stunning but also functions seamlessly. Collaboration is my
+                forte, as I seamlessly bridge the gap between teams,
+                facilitating effective communication and delivering outstanding
+                results.
+              </p>
+              <p>
+                I am constantly evolving and staying ahead of the curve when it
+                comes to industry trends, embracing new technologies and
+                methodologies. This drive pushes me to push boundaries and
+                exceed expectations, consistently delivering cutting-edge
+                solutions.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="features text-center section-padding" id="service">
+    <section class="features text-center my_skill" id="service">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h1 class="arrow">I do amazing things for clients</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 my_skill_section">
             <div class="services">
               <div class="col-md-4 wp2 item">
                 <div class="icon">
-                  <i class="fa fa-camera"></i
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="128"
+                    height="128"
+                    viewBox="0 0 128 128"
                   >
+                    <title>Interaction</title>
+                    <path
+                      d="M114,8.75H14A9.761,9.761,0,0,0,4.25,18.5v77A10.762,10.762,0,0,0,15,106.25H51.631c.6.854,1.176,1.608,1.67,2.218,5.815,7.179,12.65,10.78,20.417,10.779a32.237,32.237,0,0,0,12.389-2.725A20.313,20.313,0,0,0,96.729,106.25H113A10.762,10.762,0,0,0,123.75,95.5v-77A9.761,9.761,0,0,0,114,8.75Zm6.25,9.75V32.183H52.888l8.956-18.935a1.745,1.745,0,0,0,.149-1H114A6.257,6.257,0,0,1,120.25,18.5ZM14,12.25H58.444L49.016,32.183H7.75V18.5A6.257,6.257,0,0,1,14,12.25ZM84.76,113.292c-11.595,4.837-20.991,2.538-28.739-7.027-1.454-1.794-4.865-6.395-5.155-10.371a6.418,6.418,0,0,1,2.677-5.919l3.826,9.012a1.75,1.75,0,1,0,3.223-1.367L47.2,66.076a3.16,3.16,0,1,1,5.817-2.47l9.912,23.351a1.75,1.75,0,0,0,3.222-1.367l-3.176-7.482a2.8,2.8,0,0,1,5.149-2.181l4.225,9.951a1.75,1.75,0,1,0,3.222-1.368l-4.224-9.951a2.8,2.8,0,0,1,3.622-3.685,2.77,2.77,0,0,1,1.525,1.5l4.225,9.951a1.75,1.75,0,1,0,3.222-1.368l-4.224-9.951a2.8,2.8,0,0,1,1.745-3.763A2.926,2.926,0,0,1,84.942,69L93.65,89.517a18.706,18.706,0,0,1,.28,14.461A16.9,16.9,0,0,1,84.76,113.292ZM113,102.75H98.006a22.415,22.415,0,0,0-1.133-14.6L88.165,67.634a6.449,6.449,0,0,0-7.757-3.728,6.321,6.321,0,0,0-3.834,3.373c-.063.136-.113.276-.165.416-.045-.019-.083-.048-.128-.067a6.285,6.285,0,0,0-8.242,3.62c-.045-.019-.083-.048-.128-.066a6.215,6.215,0,0,0-7.126,1.762L56.241,62.239a6.66,6.66,0,0,0-12.262,5.2L52.154,86.7a9.871,9.871,0,0,0-4.778,9.447,17.374,17.374,0,0,0,2.111,6.6H15A7.258,7.258,0,0,1,7.75,95.5V35.683h112.5V95.5A7.258,7.258,0,0,1,113,102.75Z"
+                    />
+                    <path
+                      d="M21.57,28.966a5.75,5.75,0,1,0-5.75-5.75A5.756,5.756,0,0,0,21.57,28.966Zm0-8a2.25,2.25,0,1,1-2.25,2.25A2.253,2.253,0,0,1,21.57,20.966Z"
+                    />
+                    <path
+                      d="M37.626,28.966a5.75,5.75,0,1,0-5.75-5.75A5.756,5.756,0,0,0,37.626,28.966Zm0-8a2.25,2.25,0,1,1-2.25,2.25A2.253,2.253,0,0,1,37.626,20.966Z"
+                    />
+                    <path
+                      d="M67.522,24.966h44.745a1.75,1.75,0,0,0,0-3.5H67.522a1.75,1.75,0,0,0,0,3.5Z"
+                    />
+                    <path
+                      d="M55.251,52.064a13.752,13.752,0,0,0-17.81,18.125,1.75,1.75,0,1,0,3.221-1.368,10.252,10.252,0,0,1,18.874-8.012,1.75,1.75,0,0,0,3.223-1.367A13.667,13.667,0,0,0,55.251,52.064Z"
+                    />
+                    <path
+                      d="M41.955,45.628A20.869,20.869,0,0,0,30.911,72.96a1.75,1.75,0,0,0,3.223-1.367A17.344,17.344,0,1,1,66.065,58.039a1.751,1.751,0,0,0,3.223-1.369A20.871,20.871,0,0,0,41.955,45.628Z"
+                    />
+                  </svg>
                 </div>
                 <h2>Content Integration</h2>
                 <p>
-                  Collaborate with clients to gather and integrate website content, including text, images, videos, and other media. Ensure proper formatting, optimization, and organization of content to enhance readability and user engagement.
+                  I value simple content structure, clean design patterns, and
+                  thoughtful interactions.
                 </p>
               </div>
               <div class="col-md-4 wp2 item delay-05s">
                 <div class="icon">
-                  <i class="fa fa-desktop"></i
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="108.68"
+                    height="145.33"
+                    viewBox="0 0 108.68 145.33"
                   >
+                    <g>
+                      <polyline
+                        points="82.54 115.6 104.44 129.47 82.54 143.33"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <polyline
+                        points="26.14 115.6 4.24 129.47 26.14 143.33"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M40.82,108.13h27v19.63A10.24,10.24,0,0,1,57.62,138H51.06a10.241,10.241,0,0,1-10.24-10.24V108.13Z"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M83.63,58.57a29.433,29.433,0,0,1-4.85,16.22L67.86,108.13h-27L29.9,74.79A29.34,29.34,0,1,1,83.63,58.57Z"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="2"
+                        y1="62.42"
+                        x2="11.91"
+                        y2="62.42"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="11.91"
+                        y1="15.91"
+                        x2="19.99"
+                        y2="21.69"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="54.34"
+                        y1="2"
+                        x2="54.34"
+                        y2="11.73"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="13.56"
+                        y1="100.44"
+                        x2="21.15"
+                        y2="94.31"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="106.68"
+                        y1="62.42"
+                        x2="96.77"
+                        y2="62.42"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="96.77"
+                        y1="15.91"
+                        x2="88.7"
+                        y2="21.69"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="54.34"
+                        y1="2"
+                        x2="54.34"
+                        y2="11.73"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="95.12"
+                        y1="100.44"
+                        x2="87.54"
+                        y2="94.31"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <polyline
+                        points="60.88 107 68.99 60.16 61.1 66.94 54.34 60.16 49.16 66.94 42.18 60.16 50.74 106.09"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="40.82"
+                        y1="117.18"
+                        x2="67.86"
+                        y2="117.18"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="40.82"
+                        y1="125.33"
+                        x2="67.86"
+                        y2="125.33"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      />
+                    </g>
+                  </svg>
                 </div>
-                <h2>Front-End Development</h2>
+                <h2>Frontend Developer</h2>
                 <p>
-                  Translate the visual design into HTML, CSS, and JavaScript code. Build responsive web pages that work across different browsers and devices. Implement user interface (UI) elements, animations, and interactivity as required.
+                  I like to code things from scratch, and enjoy bringing ideas
+                  to life in the browser.
                 </p>
-                <!-- Description -->
               </div>
-              <!-- Service Box 3 -->
               <div class="col-md-4 wp2 item delay-1s">
                 <div class="icon">
-                  <i class="fa fa-cubes"></i
-                  ><!-- Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <title>12-code</title>
+                    <g id="_12-code" data-name="12-code">
+                      <path
+                        d="M30.945,41.891a10.946,10.946,0,1,1,7.741-18.685h0a10.946,10.946,0,0,1-7.741,18.685Zm0-19.891a8.946,8.946,0,1,0,6.326,2.62A8.89,8.89,0,0,0,30.945,22Z"
+                      />
+                      <path
+                        d="M45.011,48a2.972,2.972,0,0,1-2.114-.875l-4.219-4.22a1,1,0,0,1,0-1.414l2.813-2.813a1,1,0,0,1,.707-.293h0a1,1,0,0,1,.707.293L47.124,42.9A2.989,2.989,0,0,1,45.011,48ZM40.8,42.2l3.513,3.512a1.011,1.011,0,0,0,1.4,0,.987.987,0,0,0,0-1.4h0L42.2,40.8Z"
+                      />
+                      <rect
+                        x="38.385"
+                        y="37.396"
+                        width="2"
+                        height="3.978"
+                        transform="translate(-16.314 39.375) rotate(-44.99)"
+                      />
+                      <path
+                        d="M8,11H5V9H8A1,1,0,0,0,9,8V3.414L1.707,10.707.293,9.293l9-9A1,1,0,0,1,11,1V8A3,3,0,0,1,8,11Z"
+                      />
+                      <path
+                        d="M33,48H3a3,3,0,0,1-3-3V10a1,1,0,0,1,.293-.707l9-9A1,1,0,0,1,10,0H33a3,3,0,0,1,3,3V22H34V3a1,1,0,0,0-1-1H10.414L2,10.414V45a1,1,0,0,0,1,1H33a1,1,0,0,0,1-1V40h2v5A3,3,0,0,1,33,48Z"
+                      />
+                      <path
+                        d="M26.293,34.707l-3-3a1,1,0,0,1,0-1.414l3-3,1.414,1.414L25.414,31l2.293,2.293Z"
+                      />
+                      <path
+                        d="M35.707,34.707l-1.414-1.414L36.586,31l-2.293-2.293,1.414-1.414,3,3a1,1,0,0,1,0,1.414Z"
+                      />
+                      <rect
+                        x="27.394"
+                        y="30"
+                        width="7.211"
+                        height="2"
+                        transform="translate(-11.989 39.598) rotate(-56.31)"
+                      />
+                      <rect x="6" y="14" width="2" height="2" />
+                      <rect x="10" y="14" width="20" height="2" />
+                      <rect x="10" y="19" width="12" height="2" />
+                      <rect x="6" y="19" width="2" height="2" />
+                      <rect x="6" y="24" width="2" height="2" />
+                      <rect x="10" y="24" width="9" height="2" />
+                      <rect x="10" y="29" width="8" height="2" />
+                      <rect x="6" y="29" width="2" height="2" />
+                      <rect x="6" y="34" width="2" height="2" />
+                      <rect x="10" y="34" width="9" height="2" />
+                      <rect x="10" y="39" width="11" height="2" />
+                      <rect x="6" y="39" width="2" height="2" />
+                      <path d="M32,9H30V6H27V4h4a1,1,0,0,1,1,1Z" />
+                      <rect x="23" y="4" width="2" height="2" />
+                    </g>
+                  </svg>
                 </div>
-                <h2>Testing and Quality Assurance</h2>
-                <!-- Title -->
+                <h2>Quality Assurance</h2>
                 <p>
-                  Conduct thorough testing to ensure the website functions correctly, with no broken links, errors, or compatibility issues. Test the website across multiple browsers, devices, and screen sizes to ensure a consistent user experience.
+                  I conduct thorough testing to ensure the website functions
+                  correctly, with no broken links, errors, or compatibility
+                  issues.
                 </p>
-                <!-- Description -->
               </div>
             </div>
             <div class="clearfix"></div>
@@ -157,20 +398,24 @@
         </div>
       </div>
     </section>
+    <section class="text-center">
+      <div class="bio">
+        <p class="text-moving">
+          I design and code beautifully simple things, and I love what I do.
+        </p>
+      </div>
+    </section>
 
-    <div class="container-fluid">
-      <!-- About 1 -->
+    <!-- <div class="container-fluid">
       <div class="row color-bg">
         <div class="col-md-6 nopadding features-intro-img">
           <div
             class="about-image"
             style="background-image: url(img/about1.png)"
           ></div>
-          <!-- about image 1 -->
         </div>
         <div class="col-md-6 about-text">
           <h6>High quality webdesign</h6>
-          <!-- headline-->
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -180,16 +425,13 @@
             sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et dolore magna aliquyam erat.
           </p>
-          <br /><!-- About Text 1 -->
-          <a href="index.html#team" class="weight-outline-btn">Read more</a
-          ><!-- read more button  -->
+          <br />
+          <a href="index.html#team" class="weight-outline-btn">Read more</a>
         </div>
       </div>
-      <!-- About 2 -->
       <div class="row">
         <div class="col-md-6 about-text">
           <h6>Professional Photography</h6>
-          <!-- Headline -->
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -199,30 +441,25 @@
             sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et dolore magna aliquyam erat.
           </p>
-          <br /><!-- About Text 2 -->
+          <br />
           <a href="index.html#team" class="weight-outline-btn">Read more</a>
-          <!-- read more button  -->
         </div>
         <div class="col-md-6 nopadding features-intro-img">
           <div
             class="about-image"
             style="background-image: url(img/about2.png)"
           ></div>
-          <!-- about image 2 -->
         </div>
       </div>
-      <!-- About 3 -->
       <div class="row color-bg">
         <div class="col-md-6 nopadding features-intro-img">
           <div
             class="about-image"
             style="background-image: url(img/about3.png)"
           ></div>
-          <!-- about image 3 -->
         </div>
         <div class="col-md-6 about-text">
           <h6>3d modeling and animations</h6>
-          <!-- Headline-->
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -232,216 +469,207 @@
             sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et dolore magna aliquyam erat.
           </p>
-          <br /><!-- About Text 3 -->
-          <a href="index.html#team" class="weight-outline-btn">Read more</a
-          ><!-- read more button  -->
+          <br />
+          <a href="index.html#team" class="weight-outline-btn">Read more</a>
         </div>
       </div>
-    </div>
-    <!-- ==========================
-        ABOUT SECTION END
-        =========================== -->
-
-    <!-- ==========================
-        PORTFOLIO SECTION
-    =========================== -->
+    </div> -->
     <section class="swag text-center" id="portfolio">
-      <div class="container">
-        <!-- Headline -->
+      <div
+        class="container"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="2000"
+      >
         <div class="row">
-          <h1 class="arrow">Recent <span>Porojects</span></h1>
+          <h1 class="arrow"><span>My Recent Work</span></h1>
+          <h3 class="sub_title">
+            Here are a few past design projects I've worked on. Want to see
+            more?
+            <a href="mailto:puranijasmin994@gmail.com" title="email me">
+              email me</a
+            >
+          </h3>
         </div>
       </div>
     </section>
 
     <div class="container">
-      <div class="row row-offset-0">
-        <!-- PORTFOLIO ITEM 1 -->
-        <div class="col-md-3 col-sm-6">
+      <div
+        class="row"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="2000"
+      >
+        <div class="col-md-4 col-sm-6">
           <div class="overlay-effect effects clearfix">
-            <div class="img">
-              <a
-                href="img/portfolio/portfolio-01-large.jpg"
-                data-lightbox="roadtrip"
-                title="Project One - Lorem Ipsum"
+            <div class="img_port">
+              <a href="#" title="Project One"
                 ><img
                   class="grayscale"
-                  src="img/portfolio/portfolio-01-thumbnail.jpg"
+                  src="img/portfolio/port1.png"
                   alt="Portfolio Item"
               /></a>
             </div>
           </div>
         </div>
-        <!-- PORTFOLIO ITEM END -->
-
-        <!-- PORTFOLIO ITEM 2 -->
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="overlay-effect effects clearfix">
-            <div class="img">
-              <a
-                href="img/portfolio/portfolio-02-large.jpg"
-                data-lightbox="roadtrip"
-                title="Project Two - Lorem Ipsum"
+            <div class="img_port">
+              <a href="#" title="Project Two"
                 ><img
                   class="grayscale"
-                  src="img/portfolio/portfolio-02-thumbnail.jpg"
+                  src="img/portfolio/port2.png"
                   alt="Portfolio Item"
               /></a>
             </div>
           </div>
         </div>
-        <!-- PORTFOLIO ITEM END -->
-
-        <!-- PORTFOLIO ITEM 3 -->
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="overlay-effect effects clearfix">
-            <div class="img">
-              <a
-                href="img/portfolio/portfolio-03-large.jpg"
-                data-lightbox="roadtrip"
-                title="Project Three - Lorem Ipsum"
+            <div class="img_port">
+              <a href="#" title="Project Three"
                 ><img
                   class="grayscale"
-                  src="img/portfolio/portfolio-03-thumbnail.jpg"
+                  src="img/portfolio/port3.png"
                   alt="Portfolio Item"
               /></a>
             </div>
           </div>
         </div>
-        <!-- PORTFOLIO ITEM END -->
-
-        <!-- PORTFOLIO ITEM 4 -->
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="overlay-effect effects clearfix">
-            <div class="img">
-              <a
-                href="img/portfolio/portfolio-04-large.jpg"
-                data-lightbox="roadtrip"
-                title="Project Four - Lorem Ipsum"
+            <div class="img_port">
+              <a href="#" title="Project Four"
                 ><img
                   class="grayscale"
-                  src="img/portfolio/portfolio-04-thumbnail.jpg"
+                  src="img/portfolio/port4.png"
                   alt="Portfolio Item"
               /></a>
             </div>
           </div>
         </div>
-        <!-- PORTFOLIO ITEM END -->
-
-        <!-- PORTFOLIO ITEM 5 -->
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="overlay-effect effects clearfix">
-            <div class="img">
-              <a
-                href="img/portfolio/portfolio-05-large.jpg"
-                data-lightbox="roadtrip"
-                title="Project Five - Lorem Ipsum"
+            <div class="img_port">
+              <a href="#" title="Project Five"
                 ><img
                   class="grayscale"
-                  src="img/portfolio/portfolio-05-thumbnail.jpg"
+                  src="img/portfolio/port5.png"
                   alt="Portfolio Item"
               /></a>
             </div>
           </div>
         </div>
-        <!-- PORTFOLIO ITEM END -->
-
-        <!-- PORTFOLIO ITEM 6 -->
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="overlay-effect effects clearfix">
-            <div class="img">
-              <a
-                href="img/portfolio/portfolio-06-large.jpg"
-                data-lightbox="roadtrip"
-                title="Project Six - Lorem Ipsum"
+            <div class="img_port">
+              <a href="#" title="Project Six"
                 ><img
                   class="grayscale"
-                  src="img/portfolio/portfolio-06-thumbnail.jpg"
+                  src="img/portfolio/port6.png"
                   alt="Portfolio Item"
               /></a>
             </div>
           </div>
         </div>
-        <!-- PORTFOLIO ITEM END -->
-
-        <!-- PORTFOLIO ITEM 7 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="overlay-effect effects clearfix">
-            <div class="img">
-              <a
-                href="img/portfolio/portfolio-07-large.jpg"
-                data-lightbox="roadtrip"
-                title="Project Seven - Lorem Ipsum"
-                ><img
-                  class="grayscale"
-                  src="img/portfolio/portfolio-07-thumbnail.jpg"
-                  alt="Portfolio Item"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <!-- PORTFOLIO ITEM END -->
-
-        <!-- PORTFOLIO ITEM 8 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="overlay-effect effects clearfix">
-            <div class="img">
-              <a
-                href="img/portfolio/portfolio-08-large.jpg"
-                data-lightbox="roadtrip"
-                title="Project Eight - Lorem Ipsum"
-                ><img
-                  class="grayscale"
-                  src="img/portfolio/portfolio-08-thumbnail.jpg"
-                  alt="Portfolio Item"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <!-- PORTFOLIO ITEM END -->
       </div>
-      <!--/row-->
     </div>
-    <!--/.container-->
-    <!-- ==========================
-        PORTFOLIO SECTION END
-        =========================== -->
-
-    <!-- ==========================
-        CUSTOM SPACER
-        =========================== -->
     <div class="spacer-cta text-center">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <a href="index.html#contact" class="outline-btn">hire john doe</a>
+            <div class="icon_technology">
+              <img
+                class="grayscale"
+                src="img/icon1.png"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon2.png"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon3.png"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon4.png"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon5.webp"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon-6.png"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon7.webp"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon8.png"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon9.png"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <img
+                class="grayscale"
+                src="img/icon10.png"
+                alt="Portfolio Item"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+            </div>
+            <a href="/Jasminresume.pdf" target="_blank" class="outline-btn"
+              >Download my resume</a
+            >
           </div>
         </div>
       </div>
     </div>
-    <!-- ==========================
-        CUSTOM SPACER END
-        =========================== -->
-
-    <!-- ==========================
-        BLOG SECTION 
-        =========================== -->
-    <section class="text-center section-padding" id="blog">
+    <!-- <section class="text-center section-padding" id="blog">
       <div class="container">
-        <!-- Headline -->
         <div class="row">
           <div class="col-md-12">
             <h1 class="arrow">My <span>little</span> blog</h1>
           </div>
         </div>
         <br /><br />
-
-        <!-- Blog Slider -->
         <div class="row">
           <div id="blogSlider">
             <ul class="slides">
               <li>
-                <!-- Blog Entry 1 -->
                 <div class="col-md-4 wp4">
                   <div class="overlay-effect effects clearfix">
                     <div class="img">
@@ -449,20 +677,17 @@
                         src="img/blog1.jpg"
                         class="grayscale"
                         alt="Blog Item"
-                      /><!-- Blog Image -->
+                      />
                     </div>
                   </div>
                   <br />
                   <h2>Creative Minds</h2>
-                  <!-- Headline -->
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
                     non adipiscing libero.
                   </p>
-                  <!-- Description-->
                 </div>
-                <!-- Blog Entry 2 -->
                 <div class="col-md-4 wp4 delay-05s">
                   <div class="overlay-effect effects clearfix">
                     <div class="img">
@@ -470,72 +695,7 @@
                         src="img/blog2.jpg"
                         class="grayscale"
                         alt="Blog Item"
-                      /><!-- Blog Image -->
-                    </div>
-                  </div>
-                  <br />
-                  <h2>Creative Hearts</h2>
-                  <!-- Headline -->
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
-                  <!-- Description -->
-                </div>
-                <!-- Blog Entry 3 -->
-                <div class="col-md-4 wp4 delay-1s">
-                  <div class="overlay-effect effects clearfix">
-                    <div class="img">
-                      <img
-                        src="img/blog3.jpg"
-                        class="grayscale"
-                        alt="Blog Item"
-                      /><!-- Blog Image -->
-                    </div>
-                  </div>
-                  <br />
-                  <h2>Creative Ideas</h2>
-                  <!-- Headline -->
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
-                  <!-- Description-->
-                </div>
-              </li>
-              <li>
-                <!-- Blog Entry 4 -->
-                <div class="col-md-4 wp4">
-                  <div class="overlay-effect effects clearfix">
-                    <div class="img">
-                      <img
-                        src="img/blog1.jpg"
-                        class="grayscale"
-                        alt="Blog Item"
-                      /><!-- Blog Image -->
-                    </div>
-                  </div>
-                  <br />
-                  <h2>Creative Minds</h2>
-                  <!-- Headline -->
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
-                  <!-- Description -->
-                </div>
-                <!-- Blog Entry 5 -->
-                <div class="col-md-4 wp4 delay-05s">
-                  <div class="overlay-effect effects clearfix">
-                    <div class="img">
-                      <img
-                        src="img/blog2.jpg"
-                        class="grayscale"
-                        alt="Blog Item"
-                      /><!-- Blog Image -->
+                      />
                     </div>
                   </div>
                   <br />
@@ -546,7 +706,6 @@
                     non adipiscing libero.
                   </p>
                 </div>
-                <!-- Blog Entry 6 -->
                 <div class="col-md-4 wp4 delay-1s">
                   <div class="overlay-effect effects clearfix">
                     <div class="img">
@@ -554,45 +713,28 @@
                         src="img/blog3.jpg"
                         class="grayscale"
                         alt="Blog Item"
-                      /><!-- Blog Image -->
+                      />
                     </div>
                   </div>
                   <br />
                   <h2>Creative Ideas</h2>
-                  <!-- Headline -->
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
                     non adipiscing libero.
                   </p>
-                  <!-- Description -->
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ==========================
-        BLOG SECTION END
-        =========================== -->
-
-    <!-- ==========================
-        CLIENT SECTION 
-        =========================== -->
-    <div class="container-fluid">
-      <div class="row color-bg">
-        <!-- Left Image -->
-        <div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
-          <div
-            class="about-image"
-            style="background-image: url(img/clients.png)"
-          ></div>
-        </div>
-        <!-- Clients / Testimonials -->
-        <div class="col-md-6 nopadding about-text">
-          <h6>What our clients said</h6>
-          <div id="clientSlider">
+    </section> -->
+    <div class="container-fluid" id="testimonial">
+      <div class="row">
+        <div class="nopadding about-text testimonial">
+          <h2>People I've worked with have said some nice things...</h2>
+          <div id="clientSlider" class="testimonial_list">
             <ul class="slides">
               <li>
                 <p>
@@ -601,7 +743,7 @@
                   aliquyam erat, sed diam voluptua. At vero eos et accusam et
                   justo duo dolores et ea rebum. Stet clita kasd gubergren, no
                   sea takimata sanctus est Lorem ipsum dolor sit amet. <br />
-                  <small>- Pete Rock, A New Tomorrow</small>
+                  <strong>- Pete Rock, A New Tomorrow</strong>
                 </p>
               </li>
               <li>
@@ -629,97 +771,52 @@
         </div>
       </div>
     </div>
-    <!-- ==========================
-        CLIENTS SECTION END
-        =========================== -->
-
-    <!-- ==========================
-        NEWSLETTER SECTION 
-        =========================== -->
-    <section>
-      <div class="container-fluid">
-        <div class="row color-bg">
-          <div class="col-md-6 nopadding subscribe text-center">
-            <h1>
-              <i class="fa fa-paper-plane"></i
-              ><span>Subscribe our Newsletter</span>
-            </h1>
-            <!-- Heading -->
-            <form action="index.html#">
-              <input
-                type="text"
-                name=""
-                value=""
-                placeholder=""
-                required
-              /><!-- E-Mail -->
-              <input type="submit" name="" value="Send" /><!-- Submit Button -->
-            </form>
-          </div>
-          <div class="col-md-6 nopadding features-intro-img">
-            <div
-              class="about-image"
-              style="background-image: url(img/newsletter.png)"
-            ></div>
-            <!-- Right Image -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ==========================
-        NEWSLETTER SECTION END
-        =========================== -->
-
-    <!-- ==========================
-        CONTACT SECTION
-        =========================== -->
     <section class="text-center section-padding contact-wrap" id="contact">
-      <!-- To Top Button -->
-      <a href="index.html#top" class="up-btn"
+      <a
+        href="index.html#top"
+        class="up-btn"
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
         ><i class="fa fa-chevron-up"></i
       ></a>
       <div class="container">
-        <!-- Headline -->
         <div class="row">
           <div class="col-md-12">
             <h1 class="arrow">Drop <span>me</span> a line</h1>
           </div>
         </div>
         <div class="row contact-details">
-          <!-- Adress Box -->
           <div class="col-md-4">
             <div class="dark-box box-hover">
               <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-              <p>23 Ipsum street, New York</p>
+              <p>B 37/206 Mehmoorganj, Varanasi</p>
             </div>
           </div>
-          <!-- Phone Number Box -->
           <div class="col-md-4">
             <div class="dark-box box-hover">
               <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-              <p>+12 345 6789</p>
+              <p><a href="tel:7600386441">+91 7600386441</a></p>
             </div>
           </div>
-          <!-- E-Mail Box -->
           <div class="col-md-4">
             <div class="dark-box box-hover">
               <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-              <p><a href="index.html#">info@themewagon.com</a></p>
+              <p>
+                <a href="mailto:puranijasmin994@gmail.com"
+                  >puranijasmin994@gmail.com</a
+                >
+              </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <!-- Google Maps (Change your Settings below) -->
+        <!-- <div class="row">
           <div class="col-md-6">
             <div id="googlemaps"></div>
           </div>
-          <!-- Contact Form -->
           <div class="col-md-6 contact">
             <form role="form">
-              <!-- Name -->
               <div class="row">
                 <div class="col-md-6">
-                  <!-- E-Mail -->
                   <div class="form-group">
                     <input
                       type="text"
@@ -729,7 +826,6 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <!-- Phone Number -->
                   <div class="form-group">
                     <input
                       type="email"
@@ -739,7 +835,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Message Area -->
               <div class="form-group">
                 <textarea
                   class="form-control"
@@ -747,77 +842,49 @@
                   style="height: 232px"
                 ></textarea>
               </div>
-              <!-- Subtmit Button -->
               <button type="submit" class="btn btn-send">Send message</button>
             </form>
           </div>
-        </div>
+        </div> -->
         <br />
-        <!-- Social Buttons - use font-awesome, past in what you want -->
         <div class="row">
           <div class="col-md-12">
             <ul class="social-buttons">
               <li>
-                <a href="index.html#" class="social-btn"
-                  ><i class="fa fa-dribbble"></i
+                <a
+                  href="https://www.linkedin.com/in/jasmin-purani-b48872122/"
+                  class="social-btn"
+                  ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
-              <!-- dribble -->
               <li>
-                <a href="index.html#" class="social-btn"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-              </li>
-              <!-- twitter -->
-              <li>
-                <a href="index.html#" class="social-btn"
+                <a
+                  href="https://www.facebook.com/profile.php?id=100081218314573"
+                  class="social-btn"
                   ><i class="fa fa-facebook"></i
                 ></a>
               </li>
-              <!-- facebook -->
-              <li>
-                <a href="index.html#" class="social-btn"
-                  ><i class="fa fa-deviantart"></i
-                ></a>
-              </li>
-              <!-- deviantart -->
               <li>
                 <a href="index.html#" class="social-btn"
                   ><i class="fa fa-youtube"></i
                 ></a>
               </li>
-              <!-- youtube -->
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- ==========================
-        CONTACT SECTION END
-        =========================== -->
-
-    <!-- ==========================
-        FOOTER SECTION
-        =========================== -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p>
-              All Rights Reserved. &copy; 2015
-              <a href="http://www.themewagon.com">ThemeWagon</a>
-            </p>
+            <p>Designed by < JasminPurani /></p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- ==========================
-        FOOTER SECTION END
-        =========================== -->
 
-    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- SmoothScroll -->
     <script
       type="text/javascript"
       src="assets/smoothscroll/smoothscroll.js"
@@ -828,6 +895,8 @@
     <script src="js/waypoints.min.js"></script>
     <!-- classie.js -->
     <script src="js/classie.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- FlexSlider -->
     <script src="assets/flexslider/jquery.flexslider.js"></script>
     <!-- Modernizr -->
@@ -909,6 +978,23 @@
         separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
         speed: 2000, // How many milliseconds until the next word show.
       });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var ball = document.getElementById("ball");
+
+      document.onmousemove = function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+
+        // Add a delay of 100 milliseconds
+        setTimeout(function () {
+          ball.style.left = x + "px";
+          ball.style.top = y + "px";
+        }, 100);
+      };
     </script>
   </body>
 </html>
